@@ -12,7 +12,7 @@ public class Calculator
 	{
 		int choice = 0;
 		Scanner input = new Scanner(System.in);
-		float n1 = 0, n2 = 0;
+		float n1, n2 ;
 
 		System.out.println("\nWelcome to Calculator Project!");
 
@@ -30,14 +30,13 @@ public class Calculator
 				choice = input.nextInt();
 
 
-				if(choice >= 0 && choice <= 5)
+				if(choice > 0 && choice <= 5)
 				{
 					if(choice == 5)
 					{
 						System.out.println("\nThanks for using");
 						System.exit(0);
 					}
-
 
 
 					System.out.println("\nEnter First value");
@@ -47,12 +46,13 @@ public class Calculator
 					n2 = input.nextFloat();
 
 
-					if(choice == 1)
+
+					if(choice == 1 )
 					{
 						System.out.println("Sum: " + Addition.addition(n1, n2));
 					}
 
-					else if(choice == 2)
+					else if(choice == 2 )
 					{
 						System.out.println("Subtraction: " + Subtraction.subtraction(n1, n2));
 					}
@@ -66,8 +66,6 @@ public class Calculator
 					{
 						System.out.println("Division: " + Division.division(n1, n2));
 					}
-
-
 				}
 				else
 				{
